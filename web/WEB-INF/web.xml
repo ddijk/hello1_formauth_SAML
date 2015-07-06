@@ -13,7 +13,7 @@
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>/faces/*</url-pattern>
     </servlet-mapping>
-    
+
     <session-config>
         <session-timeout>
             30
@@ -36,7 +36,6 @@
     </security-constraint>
     <login-config>
         <auth-method>FORM</auth-method>
-        <realm-name>file</realm-name>
         <form-login-config>
             <form-login-page>/faces/login.xhtml</form-login-page>
             <form-error-page>/faces/error.xhtml</form-error-page>

@@ -5,17 +5,15 @@
  * compliance with  the terms of the License at:
  * http://developers.sun.com/license/berkeley_license.html
  */
-
-
 package hello1;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
-
 @ManagedBean
 @RequestScoped
 public class Hello {
+
     private String name;
 
     public Hello() {
@@ -28,4 +26,5 @@ public class Hello {
     public void setName(String user_name) {
         this.name = user_name;
     }
+
 }

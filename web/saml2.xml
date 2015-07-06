@@ -1,0 +1,39 @@
+
+<saml:Subject>
+    <saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="www.whitehorses.nl">dick</saml:NameID>
+    <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+        <saml:SubjectConfirmationData InResponseTo="_0x4a5b1400d6c5e2e58208804c082afdc9" NotOnOrAfter="2015-01-26T13:04:28.535Z" Recipient="http://p-9020:7002/saml2/sp/acs/artifact"/>
+    </saml:SubjectConfirmation>
+</saml:Subject>
+<saml:Conditions NotBefore="2015-01-26T13:02:28.535Z" NotOnOrAfter="2015-01-26T13:04:28.535Z">
+    <saml:AudienceRestriction>
+        <saml:Audience>saml2AP2</saml:Audience>
+    </saml:AudienceRestriction>
+</saml:Conditions>
+<saml:AuthnStatement AuthnInstant="2015-01-26T13:02:33.535Z">
+    <saml:AuthnContext>
+        <saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified</saml:AuthnContextClassRef>
+    </saml:AuthnContext>
+</saml:AuthnStatement>
+<saml:AttributeStatement>
+    <saml:Attribute Name="RegioCode" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+        <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">12345</saml:AttributeValue>
+    </saml:Attribute>
+    <saml:Attribute Name="AttributeWithSingleValue" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+        <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ValueOfAttributeWithSingleValue</saml:AttributeValue>
+    </saml:Attribute>
+    <saml:Attribute Name="AttributeWithMultipleValue" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+        <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Value1OfAttributeWithMultipleValue</saml:AttributeValue>
+        <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Value2OfAttributeWithMultipleValue</saml:AttributeValue>
+        <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Value3OfAttributeWithMultipleValue</saml:AttributeValue>
+    </saml:Attribute>
+</saml:AttributeStatement>
+<saml:AttributeStatement>
+    <saml:Attribute Name="Groups" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+        <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">SuperUserCC</saml:AttributeValue>
+        <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Administrators</saml:AttributeValue>
+    </saml:Attribute>
+</saml:AttributeStatement>
+</saml:Assertion>
+</samlp:Response>
+</samlp:ArtifactResponse>
